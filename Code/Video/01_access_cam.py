@@ -2,12 +2,13 @@ import sys
 import cv2
 
 s = 0
-if len(sys.argv) > 1:
-    arg = sys.argv[1]
-    if arg.isdigit():
-        s = int(arg)
-    else:
-        s = arg
+#IF MORE THAN 1 SOURCE
+# if len(sys.argv) > 1:
+#     arg = sys.argv[1]
+#     if arg.isdigit():
+#         s = int(arg)
+#     else:
+#         s = arg
 
 source = cv2.VideoCapture(s)
 if not source.isOpened():
